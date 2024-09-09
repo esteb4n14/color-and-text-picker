@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Color Picker</h1>
+        <div class="color-inputs">
+            <div class="color-rectangle">
+                <label for="rectColorInput">Rectangle Color:</label>
+                <input type="text" id="rectColorInput" value="#000000" />
+                <input type="color" id="rectColorPicker" />
+            </div>
+
+            <div class="color-text">
+                <label for="textColorInput">Text Color:</label>
+                <input type="text" id="textColorInput" value="#FFFFFF" />
+                <input type="color" id="textColorPicker" />
+            </div>
+        </div>
+        <canvas id="myCanvas" width="700" height="350"></canvas>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
